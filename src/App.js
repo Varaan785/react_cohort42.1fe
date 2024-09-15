@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// 3 шаг - импортироуем компонент Lesson_02
+import Lesson_02 from "./lessons/Lesson_02/Lesson_02";
+
+import "./App.css";
+
+// Правила компонентов:
+// 1. Названия пишем с большой буквы
+// 2. Компонент - это функция и она должна возрващать JSX
+// 3. JSX - синтаксический сахар, позволяющий возращать HTML элементы из компонента, а также прописывать логику прямо в HTML
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* 4 шаг - возвращаем компонент Lesson_02 из компонента App */}
+      <Lesson_02 />
     </div>
   );
 }
