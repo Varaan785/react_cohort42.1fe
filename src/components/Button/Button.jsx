@@ -1,7 +1,12 @@
 import "./styles.css";
+import React from "react";
 
-function Button() {
-  return <button className="button-component">Send</button>;
-}
+const Button = ({ name, type }) => {
+  return (
+    <button type={type} className="button-component">
+      {name}
+    </button>
+  );
+};
 
 export default Button;
