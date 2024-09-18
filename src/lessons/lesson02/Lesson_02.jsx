@@ -1,6 +1,6 @@
-import Button from "../../components/Button/Button";
+import Button from '../../components/Button/Button';
 
-import "./styles.css";
+import './styles.css';
 
 // 1 шаг - создание компонента
 function Lesson_02() {
@@ -16,8 +16,8 @@ function Lesson_02() {
   };
 
   const getFullName = () => {
-    return `${user.firstName} ${user.lastName}`;
-  };
+    return `${user.firstName} ${user.lastName}`
+  }
 
   return (
     <div className="lesson02_wrapper">

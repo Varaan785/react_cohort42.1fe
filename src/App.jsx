@@ -1,7 +1,16 @@
+// LESSONS
 // 3 шаг - импортироуем компонент Lesson_02
-import Lesson_02 from "./lessons/Lesson_02/Lesson_02";
+import Lesson_02 from "./lessons/lesson02/Lesson_02";
+import Lesson_03 from "./lessons/lesson03/Lesson_03";
+import Lesson_04 from "./lessons/lesson04/lesson04fep.jsx";
+
+// HOMEWORKS
+import Homework02fep from "./homeworks/homework02fep/HomeWork02fep"
+import HomeWork03fep from "./homeworks/homework03fep/homework03fep.jsx";
+// CONSULTATIONS
 
 import "./App.css";
+
 
 // Правила компонентов:
 // 1. Названия пишем с большой буквы
@@ -11,8 +20,14 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      {/* Lessons */}
       {/* 4 шаг - возвращаем компонент Lesson_02 из компонента App */}
-      <Lesson_02 />
+      {/* <Lesson_02 /> */}
+      {/* <Lesson_03 /> */}
+      {/* Homeworks */}
+      {/* <Homework02fep /> */}
+      {/* <HomeWork03fep /> */}
+      <Lesson_04 />
     </div>
   );
 }
