@@ -5,7 +5,7 @@ import Lesson_03 from "./lessons/lesson03/Lesson_03";
 
 // HOMEWORKS
 import Homework02fep from "./homeworks/homework02fep/HomeWork02fep"
-import HomeWork03fep from "./homeworks/homework03fep/homework03fep";
+import HomeWork03fep from "./homeworks/homework03fep/homework03fep.jsx";
 // CONSULTATIONS
 
 import "./App.css";
