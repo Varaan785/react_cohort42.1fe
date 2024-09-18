@@ -2,6 +2,7 @@
 // 3 шаг - импортироуем компонент Lesson_02
 import Lesson_02 from "./lessons/lesson02/Lesson_02";
 import Lesson_03 from "./lessons/lesson03/Lesson_03";
+import Lesson_04 from "./lessons/lesson04/lesson04fep.jsx";
 
 // HOMEWORKS
 import Homework02fep from "./homeworks/homework02fep/HomeWork02fep"
@@ -25,7 +26,8 @@ function App() {
       {/* <Lesson_03 /> */}
       {/* Homeworks */}
       {/* <Homework02fep /> */}
-      <HomeWork03fep />
+      {/* <HomeWork03fep /> */}
+      <Lesson_04 />
     </div>
   );
 }
