@@ -10,6 +10,7 @@ import HomeWork03fep from "./homeworks/homework03fep/homework03fep.jsx";
 // CONSULTATIONS
 
 import "./App.css";
+import HomeWork_04 from "./homeworks/homework04fep/homework04fep.jsx";
 
 
 // Правила компонентов:
@@ -28,6 +29,8 @@ function App() {
       {/* <Homework02fep /> */}
       {/* <HomeWork03fep /> */}
       <Lesson_04 />
+      {/* <HomeWork_04/> */}
+      
     </div>
   );
 }
