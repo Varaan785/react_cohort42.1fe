@@ -1,42 +1,45 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
 import Button from "../Button/Button";
 
-
+import "./styles.css";
 
 function Feedback() {
-  const [count, setCount] = useState(0);
-  const [countd2, setCount2] = useState(0);
-  const result = setCount + setCount2;
+  const [likes, setLikes] = useState(0);
+  const [dislikes, setDislikes] = useState(0);
 
-
-
-  const Like = () => {
-    setCount((vorherigerWert) => {
-      return vorherigerWert + 1;
+  const onLike = () => {
+    setLikes((prevValue) => {
+      return prevValue + 1;
     });
-
-    const Dislike = () => {
-      setCount2((vorherigerWert) => {
-        return vorherigerWert + 1;
-      });
-    };
   };
+
+  const onDislike = () => {
+    setDislikes((prevValue) => {
+      return prevValue + 1;
+    });
+  };
+
+  const resetResults = () => {
+    setLikes(0);
+    setDislikes(0);
+  };
+
   return (
-    <div>
-        <div> 
-            <div className="button-control">Like</div>
-            <Button name="Like" onClick={Like}/>
+    <div className="feedback-wrapper">
+      <div className="feedback-control">
+        <div className="buttonwithcount-container">
+          <Button name="Like" onClick={onLike} />
+          <p className="count">{likes}</p>
         </div>
-        <div> 
-            <div className="button-control">Dislike</div>
-            <Button name="Dislike" onClick={Dislike}/>
+        <div className="buttonwithcount-container">
+          <Button name="Dislike" onClick={onDislike} />
+          <p className="count">{dislikes}</p>
         </div>
-        <div> 
-            <div className="button-control">Result</div>
-            <Button name="Result" onClick={result}/>
-        </div>
-     
+      </div>
+      <Button name="Reset Results" onClick={resetResults} />
     </div>
   );
 }
+
 export default Feedback;
